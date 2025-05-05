@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Montserrat', ;
+  box-sizing: border-box;
+}
+
+/* Container */
+.menu-container {
+  text-align: center;
+  padding: 10px;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Space between logo & title */
+  background-color: #83171e;
+  gap: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 100px;
+  /* Adjust as needed */
+  height: 100px;
+  border-radius: 25px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  /* Ensure contrast */
+  font-family: 'Montserrat';
+  text-transform: capitalize;
+}
+
+/* Search Bar */
+.search-bar {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #83171e;
+  border-radius: 5px;
+}
+
+.search-bar::placeholder {
+  color: #83171e;
+  opacity: 1;
+}
+
+/* Category Menu */
+.category-menu {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding-bottom: 10px;
+  gap: 5px;
+  margin: 0px 20px;
+}
+
+.category-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.category-btn {
+  padding: 8px 12px;
+  background: #fffcfc;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  flex: none;
+  border-radius: 5px;
+  margin-top: -10px;
+}
+
+.category-btn.active {
+  color: #83171e;
+  border-bottom: 2px solid #83171e;
+}
+
+/* Menu Grid - Responsive */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  /* Auto responsive */
+  gap: 15px;
+  margin: 20px;
+}
+
+/* Individual Menu Item */
+.menu-item {
+  padding: 10px;
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+  text-align: center;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Shadow for better UI */
+  transition: transform 0.2s ease-in-out;
+}
+
+.menu-item:hover {
+  border: 1px solid #83171e;
+  transform: scale(1.05);
+}
+
+/* Image inside Menu Item */
+.menu-item img {
+  width: 100%;
+  height: 120px;
+  max-height: 120px;
+  border-radius: 10px;
+  object-fit: cover;
+  background: gray;
+}
+
+/* Menu Item Name & Price */
+.menu-name {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #83171e;
+  margin-top: 5px;
+}
+
+.menu-price {
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+
+/* No Items Message */
+.no-items {
+  font-size: 16px;
+  color: #83171e;
+  font-weight: bold;
+  text-transform:uppercase ;
+}
+
+/* Media Queries for better responsiveness */
+@media (max-width: 600px) {
+  .menu-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 400px) {
+  .menu-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .title {
+    font-size: 22px;
+  }
+}
+
+.menu-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: #f8f8f8;
+  /* Space for button */
+}
+
+/* 🔽 Image Section */
+.details-image {
+  width: 100%;
+  height: 55vh;
+  object-fit: cover;
+  border-bottom-left-radius: 20px;
+}
+
+.details-image img {
+  width: 100%;
+  height: 55vh;
+}
+
+/* 🔽 Details Card */
+.details-content {
+  background: white;
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 50px;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.details-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.details-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.details-description {
+  font-size: 14px;
+  color: #666;
+}
+
+/* 🔽 Fixed Back Button */
+.back-button {
+  width: 90%;
+  max-width: 400px;
+  padding: 12px;
+  background: #d9534f;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: -50px;
+}
+
+.back-button:hover {
+  background: #83171e;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 768px) {
+  .details-content {
+    width: 95%;
+  }
+
+  .details-title {
+    font-size: 18px;
+  }
+
+  .details-price {
+    font-size: 16px;
+  }
+
+  .details-description {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .details-image {
+    height: 40vh;
+    /* Smaller screens smaller image */
+  }
+
+  .details-content {
+    width: 98%;
+  }
+
+  .back-button {
+    width: 95%;
+  }
+}
+
+.quantity-container {
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity-container label {
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.quantity-btn {
+  background-color: #83171e;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.quantity-btn:hover {
+  background-color: #d9534f;
+}
+
+.quantity-value {
+  font-size: 1.2rem;
+  font-weight: bold;
+  min-width: 30px;
+  text-align: center;
+}

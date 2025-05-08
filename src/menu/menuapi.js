@@ -191,7 +191,7 @@ const menuapi = [
         name: "MANGO MILKSHAKE",
         price: 34.5,
         categrory: "COLD DRINKS",
-        img: '/images/mangoshake.jpg',
+        img: '/images/mangomilkshakenew.jpg',
     },
     {
         name: "Frappuccino",
@@ -248,6 +248,13 @@ const menuapi = [
         price: 36.5,
         categrory: "BREAKFAST",
         img: '/images/6.jpg',
+        desc: 'A delicious avocado toast topped with creamy mashed avocado, a sprinkle of seasoning, and a hint of lemon for the perfect light and healthy bite!'
+    },
+    {
+        name: "Classic halloumi cheese",
+        price: 31.5,
+        categrory: "BREAKFAST",
+        img: '/images/hallomi2.jpeg',
         desc: 'A delicious avocado toast topped with creamy mashed avocado, a sprinkle of seasoning, and a hint of lemon for the perfect light and healthy bite!'
     },
     // , {
@@ -535,7 +542,7 @@ const menuapi = [
         name: "CRUNCHY CHOCO CAKE",
         price: 36.5,
         categrory: "DESERT",
-        img: "/images/chococrunch.jpeg",
+        img: "/images/cruncychoco.jpg",
         desc: "A creamy cheesecake with a delightful pistachio flavor, topped with crushed pistachios for the perfect nutty finish!"
     },
     {

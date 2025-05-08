@@ -68,7 +68,7 @@ const menuapi = [
     },
     {
         name: "WINTER CHOCO",
-        price: 24.6,
+        price: 24.5,
         categrory: "COFFEE",
         img: '/images/choco.jpg'
     },

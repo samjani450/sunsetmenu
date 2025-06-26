@@ -489,13 +489,7 @@ const menuapi = [
         desc: "A classic Tiramisu, with layers of coffee-soaked ladyfingers and creamy mascarpone, dusted with cocoa for the perfect indulgence!A classic Tiramisu, with layers of coffee-soaked ladyfingers and creamy mascarpone, dusted with cocoa for the perfect indulgence!"
 
     },
-    {
-        name: "CHOCOLATE KUNAFA",
-        price: 41.5,
-        categrory: "DESERT",
-        img: "/images/22.jpg",
-        desc: "A decadent twist on traditional kunafa, with layers of rich chocolate and crispy pastry, offering a perfect balance of sweetness and crunch!"
-    },
+
     // {
     //     name: "CHEESE CAKE PISTACHIO",
     //     price: 39,
@@ -545,13 +539,13 @@ const menuapi = [
         img: "/images/cruncychoco.jpg",
         desc: "A creamy cheesecake with a delightful pistachio flavor, topped with crushed pistachios for the perfect nutty finish!"
     },
-    {
-        name: "Coco Mango",
-        price: 39.5,
-        categrory: "DESERT",
-        img: "/images/mangonew.jpeg",
-        desc: "A creamy cheesecake with a delightful pistachio flavor, topped with crushed pistachios for the perfect nutty finish!"
-    },
+    // {
+    //     name: "Coco Mango",
+    //     price: 39.5,
+    //     categrory: "DESERT",
+    //     img: "/images/mangonew.jpeg",
+    //     desc: "A creamy cheesecake with a delightful pistachio flavor, topped with crushed pistachios for the perfect nutty finish!"
+    // },
 
     
     // {
@@ -570,7 +564,7 @@ const menuapi = [
     },
     {
         name: "AFTERNOON Tea",
-        price: 80,
+        price: 82,
         categrory: "AFTERNOON TEA",
         img: "/images/afternspecaial.jpg",
         desc: "A delightful fusion of creamy tiramisu and rich leche, with layers of indulgent flavors and a smooth, velvety texture!"

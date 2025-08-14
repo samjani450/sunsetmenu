@@ -539,6 +539,13 @@ const menuapi = [
         img: "/images/cruncychoco.jpg",
         desc: "A creamy cheesecake with a delightful pistachio flavor, topped with crushed pistachios for the perfect nutty finish!"
     },
+     {
+        name: "BANANA PUDDING",
+        price: 33.6,
+        categrory: "DESERT",
+        img: "/images/bananapudding.jpg",
+        desc: "A creamy cheesecake with a delightful pistachio flavor, topped with crushed pistachios for the perfect nutty finish!"
+    },
     // {
     //     name: "Coco Mango",
     //     price: 39.5,

@@ -14,8 +14,9 @@ const categories = [
     categ: "SUNSET & TOXIUAE",
     subcategories: [
       { name: "NOODLES" },
-      { name: "SUSHI" },
+      
       { name: "THE CONTINENTAL FOOD" },
+      { name: "SUSHI" },
       { name: "NOODLES AND FRIED RICE" },
     ],
   },

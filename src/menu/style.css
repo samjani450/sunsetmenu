@@ -58,8 +58,8 @@
   scrollbar-width: none;
   -ms-overflow-style: none;
   padding-bottom: 10px;
-  gap: 5px;
-  margin: 0px 20px;
+  gap: 5px;          /* <-- ye gap hai buttons ke beech */
+  margin: 0px 20px;  /* <-- ye left-right margin bhi extra space create karta hai */
 }
 
 .category-menu::-webkit-scrollbar {
@@ -68,7 +68,7 @@
 
 
 .category-btn {
-  padding: 8px 12px;
+  padding: 2px 12px;
   background: #fffcfc;
   border: none;
   cursor: pointer;
@@ -87,25 +87,33 @@
   color: #83171e;
   border-bottom: 2px solid #83171e;
 }
-
-/* 🔸 Subcategory Menu */
 .subcategory-menu {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 8px 0 15px 0;
+  justify-content:space-between;
+  align-items: center;
+  flex-wrap: nowrap;
   gap: 8px;
-  padding: 0 10px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  margin: 10px 0;
+  padding: 5px 10px;
+}
+
+.subcategory-menu::-webkit-scrollbar {
+  display: none;
 }
 
 .subcategory-btn {
-  padding: 6px 10px;
+  padding: 6px 14px;
   font-size: 14px;
   border: 1px solid #83171e;
-  border-radius: 5px;
+  border-radius: 20px;
   background: #fff;
   color: #83171e;
   cursor: pointer;
+  white-space: nowrap;
+  flex: none;
   transition: all 0.3s ease;
 }
 
@@ -117,8 +125,8 @@
 .subcategory-btn.active {
   background-color: #83171e;
   color: #fff;
+  font-weight: 600;
 }
-
 /* 🔹 Menu Grid - Responsive */
 .menu-grid {
   display: grid;

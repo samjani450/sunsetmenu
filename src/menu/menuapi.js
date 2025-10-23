@@ -656,7 +656,7 @@ const menuapi = [
 {
     name: "Koren Creamy Nodels",
     price: 37,
-    img: "/images/firstpiccol.jpeg",
+    img: "/images/crewamynodles.jpeg",
     categrory: "NOODLES",
 }, 
 {
@@ -668,7 +668,7 @@ const menuapi = [
 {
     name: "HOT LEMON NOODLES",
     price: 32,
-    img: "/images/thirdpicCol.jpeg",
+    img: "/images/hotlemonnodels.jpeg",
     categrory: "NOODLES",
 },
 {

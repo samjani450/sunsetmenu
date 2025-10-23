@@ -653,7 +653,85 @@ const menuapi = [
     img: "/images/mangocheesecake1.jpg",
     categrory: "CAKE",
 }, 
+{
+    name: "Koren Creamy Nodels",
+    price: 37,
+    img: "/images/firstpiccol.jpeg",
+    categrory: "NOODLES",
+}, 
+{
+    name: "SUPER SPICY NOODLES",
+    price: 37,
+    img: "/images/secpicCol.jpeg",
+     categrory: "NOODLES",
+}, 
+{
+    name: "HOT LEMON NOODLES",
+    price: 32,
+    img: "/images/thirdpicCol.jpeg",
+    categrory: "NOODLES",
+},
+{
+    name: "CREAMY CRAB SUSHI",
+    price: 37,
+    img: "/images/sushi1.jpeg",
+   categrory: "SUSHI",
+},
 
+{
+    name: "CAJUN SHRIMP SUSHI",
+    price: 38,
+    img: "/images/sushi2.jpeg",
+   categrory: "SUSHI",
+},
+{
+    name: "CHICKEN MAKI ROLL",
+    price: 38,
+    img: "/images/sushi3.jpeg",
+   categrory: "SUSHI",
+},
+{
+    name: "KATSU FRIED CHICKEN",
+    price: 14.5,
+    img: "/images/friedchicken.jpeg",
+   categrory: "NOODLES AND FRIED RICE",
+},
+{
+    name: "SHRIMP TEMPURA",
+    price: 14.5,
+    img: "/images/shripm1.jpeg",
+    categrory: "NOODLES AND FRIED RICE",
+},
+
+{
+    name: "CRISPY CAJUN SHRIMP",
+    price: 32,
+    img: "/images/cont1.jpeg",
+    categrory: "THE CONTINENTAL FOOD",
+},{
+    name: "BEST CRAB SALAD",
+    price: 29,
+    img: "/images/cont2.jpeg",
+    categrory: "THE CONTINENTAL FOOD",
+},
+{
+    name: "FRIED RICE CHICKEN",
+    price: 31,
+    img: "/images/cont3.jpeg",
+    categrory: "THE CONTINENTAL FOOD",
+},
+{
+    name: "CHICKEN KATSU SANDO",
+    price: 32,
+    img: "/images/cont4.jpeg",
+    categrory: "THE CONTINENTAL FOOD",
+},
+{
+    name: "SPICEAL FRIES BAHARAT",
+    price: 15,
+    img: "/images/cont5.jpeg",
+    categrory: "THE CONTINENTAL FOOD",
+},
 ]
 
 export default menuapi;

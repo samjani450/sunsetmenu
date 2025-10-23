@@ -24,15 +24,7 @@ const categories = [
   { categ: "JUICE & WATER" },
   { categ: "CAKE" },
   { categ: "AFTERNOON TEA" },
-  {
-    categ: "SUNSET & TOXIUAE",
-    subcategories: [
-      { name: "NOODLES" },
-      { name: "SUSHI" },
-      { name: "THE CONTINENTAL FOOD" },
-      { name: "NOODLES AND FRIED RICE" },
-    ],
-  },
+ 
 ];
 
 const Menu = () => {

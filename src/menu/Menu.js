@@ -10,16 +10,7 @@ const categories = [
   { categ: "DESERT" },
   { categ: "COFFEE" },
   { categ: "FILTERED COFFEE" },
-  //  {
-  //   categ: "SUNSET & TOXIUAE",
-  //   subcategories: [
-  //     { name: "NOODLES" },
-      
-  //     { name: "THE CONTINENTAL FOOD" },
-  //     { name: "SUSHI" },
-  //     { name: "NOODLES AND FRIED RICE" },
-  //   ],
-  // },
+
   { categ: "MATCHA" },
   { categ: "COLD DRINKS" },
   { categ: "JUICE & WATER" },

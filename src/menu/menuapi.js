@@ -390,13 +390,7 @@ const menuapi = [
          img: "/images/5.jpg",
         desc: "A luxurious truffle egg toast with creamy scrambled eggs infused with truffle oil, served on a crispy toasted bread for a rich and indulgent flavor!"
     },
-    // {
-    //     name: "HALLOUMI SANDO",
-    //     price: 30,
-    //     categrory: "BREAKFAST",
-    //     img: "/images/7.jpg",
-    //     desc: 'A delicious Halloumi sandwich with grilled halloumi cheese, fresh veggies, and a flavorful sauce, all packed in toasted bread!'
-    // },
+    
     {
         name: "TUNA SANDWICH",
         price: 33.5,
@@ -414,7 +408,13 @@ const menuapi = [
 
 
     },
- 
+    // {
+    //     name: "PEPPERONI PIZZA SANDWICH",
+    //     price: 33,
+    //     categrory: "SANDWICH",
+    //     img: "/images/17.jpg",
+    //     desc: 'A delicious fusion of pizza and sandwich, loaded with spicy pepperoni, melted cheese, and zesty marinara sauce in crispy toasted bread!'
+    // },
     {
         name: "CHICKEN AVO SANDWICH",
         price: 34.5,
@@ -582,7 +582,22 @@ const menuapi = [
         img: "/images/bananapudding.jpg",
         desc: "A creamy cheesecake with a delightful pistachio flavor, topped with crushed pistachios for the perfect nutty finish!"
     },
- 
+    // {
+    //     name: "Coco Mango",
+    //     price: 39.5,
+    //     categrory: "DESERT",
+    //     img: "/images/mangonew.jpeg",
+    //     desc: "A creamy cheesecake with a delightful pistachio flavor, topped with crushed pistachios for the perfect nutty finish!"
+    // },
+
+    
+    // {
+    //     name: "LUQAIMAT",
+    //     price: 25,
+    //     categrory: "DESERT",
+    //     img: "/images/des1.jpg",
+    //     desc: "A creamy cheesecake with a delightful pistachio flavor, topped with crushed pistachios for the perfect nutty finish!"
+    // },
     {
         name: "LECHES TIRAMISU",
         price: 33.5,
@@ -628,6 +643,25 @@ const menuapi = [
     categrory: "CAKE",
     img: "/images/cake1.jpg",
 },  
+// {
+//     name: "Mango Cheese cake",
+//     price: 160,
+//     categrory: "CAKE",
+//     img: "/images/mangocheesecake.jpeg",
+// }, 
+// {
+//     name: "Kunafa Cheese cake",
+//     price: 160,
+//     categrory: "CAKE",
+//     img: "/images/mangocheesecake.jpeg",
+// }, 
+//  {
+//     name: "Tiramisu cake",
+//     price: 160,
+//     categrory: "CAKE",
+//     img: "/images/tiramisu.jpg",
+// },  
+
 ]
 
 export default menuapi;

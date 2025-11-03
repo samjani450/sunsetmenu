@@ -201,6 +201,34 @@ const menuapi = [
 
     },
     {
+        name: "Orange amercano",
+        price: 30,
+        categrory: "COLD DRINKS",
+        img: '/images/orange americano.jpeg',
+
+    },
+     {
+        name: "Dragon fruit mojitos",
+        price: 36,
+        categrory: "COLD DRINKS",
+        img: '/images/dragon mjiot.jpeg',
+
+    },
+     {
+        name: "Pinacolada",
+        price: 36,
+        categrory: "COLD DRINKS",
+        img: '/images/pinacolada.jpg',
+
+    },
+     {
+        name: "Tiramisu latte",
+        price: 30,
+        categrory: "COLD DRINKS",
+        img: '/images/tramisulatte.jpeg',
+
+    },
+    {
         name: "V 60",
         price: 36.5,
         categrory: "FILTERED COFFEE",
@@ -434,6 +462,20 @@ const menuapi = [
         price: 36.5,
         categrory: "DESERT",
         img: "/images/datepudding.jpeg",
+        desc: 'A warm and moist date pudding, rich in flavor with a caramel-like sweetness in every bite!'
+    },
+     {
+        name: "Strawberry puff",
+        price: 25,
+        categrory: "DESERT",
+        img: "/images/straweberrypuff.png",
+        desc: 'A warm and moist date pudding, rich in flavor with a caramel-like sweetness in every bite!'
+    },
+     {
+        name: "Tiramisu ball",
+        price: 35,
+        categrory: "DESERT",
+        img: "/images/tramisubol.png",
         desc: 'A warm and moist date pudding, rich in flavor with a caramel-like sweetness in every bite!'
     },
     {

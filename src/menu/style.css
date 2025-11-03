@@ -90,7 +90,7 @@
 .subcategory-menu {
   display: flex;
   justify-content:space-between;
-  align-items: center;
+  align-items: center;  
   flex-wrap: nowrap;
   gap: 8px;
   overflow-x: auto;

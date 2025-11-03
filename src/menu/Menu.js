@@ -10,16 +10,16 @@ const categories = [
   { categ: "DESERT" },
   { categ: "COFFEE" },
   { categ: "FILTERED COFFEE" },
-   {
-    categ: "SUNSET & TOXIUAE",
-    subcategories: [
-      { name: "NOODLES" },
+  //  {
+  //   categ: "SUNSET & TOXIUAE",
+  //   subcategories: [
+  //     { name: "NOODLES" },
       
-      { name: "THE CONTINENTAL FOOD" },
-      { name: "SUSHI" },
-      { name: "NOODLES AND FRIED RICE" },
-    ],
-  },
+  //     { name: "THE CONTINENTAL FOOD" },
+  //     { name: "SUSHI" },
+  //     { name: "NOODLES AND FRIED RICE" },
+  //   ],
+  // },
   { categ: "MATCHA" },
   { categ: "COLD DRINKS" },
   { categ: "JUICE & WATER" },
@@ -30,7 +30,7 @@ const categories = [
 
 const Menu = () => {
   // 🔹 Default category and subcategory set to SUNSET & TOXIUAE → NOODLES
-  const [selectedCategory, setSelectedCategory] = useState("SUNSET & TOXIUAE");
+  const [selectedCategory, setSelectedCategory] = useState("BREAKFAST");
   const [selectedSubCategory, setSelectedSubCategory] = useState("NOODLES");
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedItem, setSelectedItem] = useState(null);

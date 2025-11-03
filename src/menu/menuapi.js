@@ -414,13 +414,7 @@ const menuapi = [
 
 
     },
-    // {
-    //     name: "PEPPERONI PIZZA SANDWICH",
-    //     price: 33,
-    //     categrory: "SANDWICH",
-    //     img: "/images/17.jpg",
-    //     desc: 'A delicious fusion of pizza and sandwich, loaded with spicy pepperoni, melted cheese, and zesty marinara sauce in crispy toasted bread!'
-    // },
+ 
     {
         name: "CHICKEN AVO SANDWICH",
         price: 34.5,
@@ -588,22 +582,7 @@ const menuapi = [
         img: "/images/bananapudding.jpg",
         desc: "A creamy cheesecake with a delightful pistachio flavor, topped with crushed pistachios for the perfect nutty finish!"
     },
-    // {
-    //     name: "Coco Mango",
-    //     price: 39.5,
-    //     categrory: "DESERT",
-    //     img: "/images/mangonew.jpeg",
-    //     desc: "A creamy cheesecake with a delightful pistachio flavor, topped with crushed pistachios for the perfect nutty finish!"
-    // },
-
-    
-    // {
-    //     name: "LUQAIMAT",
-    //     price: 25,
-    //     categrory: "DESERT",
-    //     img: "/images/des1.jpg",
-    //     desc: "A creamy cheesecake with a delightful pistachio flavor, topped with crushed pistachios for the perfect nutty finish!"
-    // },
+ 
     {
         name: "LECHES TIRAMISU",
         price: 33.5,
@@ -649,131 +628,6 @@ const menuapi = [
     categrory: "CAKE",
     img: "/images/cake1.jpg",
 },  
-// {
-//     name: "Mango Cheese cake",
-//     price: 160,
-//     categrory: "CAKE",
-//     img: "/images/mangocheesecake.jpeg",
-// }, 
-// {
-//     name: "Kunafa Cheese cake",
-//     price: 160,
-//     categrory: "CAKE",
-//     img: "/images/mangocheesecake.jpeg",
-// }, 
-//  {
-//     name: "Tiramisu cake",
-//     price: 160,
-//     categrory: "CAKE",
-//     img: "/images/tiramisu.jpg",
-// },  
-// {
-//     name: "CHOCOLATE KUNAFA",
-//     price: 182,
-//     categrory: "CAKE",
-//     img: "/images/chocokunafa.jpg",
-// },   {
-//     name: "DATE PUDDING",
-//     price: 162,
-//     categrory: "CAKE",
-//     img: "/images/datepudd.jpg",
-// },   {
-//     name: "FRENCH TOAST",
-//     price: 162,
-//     categrory: "CAKE",
-//     img: "/images/frenchtoast1.jpeg",
-// },  
-// {
-//     name: "PUDDING",
-//     price: 152,
-//     img: "/images/normalP.jpg",
-//     categrory: "CAKE",
-// }, 
-// {
-//     name: "Mango cheese Cake",
-//     price: 162,
-//     img: "/images/mangocheesecake1.jpg",
-//     categrory: "CAKE",
-// }, 
-// {
-//     name: "Koren Creamy Nodels",
-//     price: 37,
-//     img: "/images/crewamynodles.jpeg",
-//     categrory: "NOODLES",
-// }, 
-// {
-//     name: "SUPER SPICY NOODLES",
-//     price: 37,
-//     img: "/images/secpicCol.jpeg",
-//      categrory: "NOODLES",
-// }, 
-// {
-//     name: "HOT LEMON NOODLES",
-//     price: 32,
-//     img: "/images/hotlemonnodels.jpeg",
-//     categrory: "NOODLES",
-// },
-// {
-//     name: "CREAMY CRAB SUSHI",
-//     price: 37,
-//     img: "/images/sushi1.jpeg",
-//    categrory: "SUSHI",
-// },
-
-// {
-//     name: "CAJUN SHRIMP SUSHI",
-//     price: 38,
-//     img: "/images/sushi2.jpeg",
-//    categrory: "SUSHI",
-// },
-// {
-//     name: "CHICKEN MAKI ROLL",
-//     price: 38,
-//     img: "/images/sushi3.jpeg",
-//    categrory: "SUSHI",
-// },
-// {
-//     name: "KATSU FRIED CHICKEN",
-//     price: 14.5,
-//     img: "/images/friedchicken.jpeg",
-//    categrory: "NOODLES AND FRIED RICE",
-// },
-// {
-//     name: "SHRIMP TEMPURA",
-//     price: 14.5,
-//     img: "/images/shripm1.jpeg",
-//     categrory: "NOODLES AND FRIED RICE",
-// },
-
-// {
-//     name: "CRISPY CAJUN SHRIMP",
-//     price: 32,
-//     img: "/images/cont1.jpeg",
-//     categrory: "THE CONTINENTAL FOOD",
-// },{
-//     name: "BEST CRAB SALAD",
-//     price: 29,
-//     img: "/images/cont2.jpeg",
-//     categrory: "THE CONTINENTAL FOOD",
-// },
-// {
-//     name: "FRIED RICE CHICKEN",
-//     price: 31,
-//     img: "/images/cont3.jpeg",
-//     categrory: "THE CONTINENTAL FOOD",
-// },
-// {
-//     name: "CHICKEN KATSU SANDO",
-//     price: 32,
-//     img: "/images/cont4.jpeg",
-//     categrory: "THE CONTINENTAL FOOD",
-// },
-// {
-//     name: "SPICEAL FRIES BAHARAT",
-//     price: 15,
-//     img: "/images/cont5.jpeg",
-//     categrory: "THE CONTINENTAL FOOD",
-// },
 ]
 
 export default menuapi;

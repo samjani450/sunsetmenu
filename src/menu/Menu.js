@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import menuapi from "./menuapi";
-import MenuDetails from "./MenuDetails";
+import MenuDetails from "./MenuDetails"; // Import Menu Details
 import "./style.css";
 
 const categories = [
@@ -9,8 +9,7 @@ const categories = [
   { categ: "SANDWICH" },
   { categ: "DESERT" },
   { categ: "COFFEE" },
-  { categ: "FILTERED COFFEE" },
-
+  { categ: "FILTERED COFFEE"},
   { categ: "MATCHA" },
   { categ: "COLD DRINKS" },
   { categ: "JUICE & WATER" },
@@ -20,40 +19,27 @@ const categories = [
 ];
 
 const Menu = () => {
-  // 🔹 Default category and subcategory set to SUNSET & TOXIUAE → NOODLES
   const [selectedCategory, setSelectedCategory] = useState("BREAKFAST");
-  const [selectedSubCategory, setSelectedSubCategory] = useState("NOODLES");
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedItem, setSelectedItem] = useState(null);
 
-  // 🔹 Filter logic: use subcategory when available
-  const filteredItems = menuapi
-    .filter((item) => {
-      const categoryMatch =
-        item.categrory === selectedSubCategory ||
-        item.categrory === selectedCategory;
-      const searchMatch = item.name
-        .toLowerCase()
-        .includes(searchTerm.toLowerCase());
-      return categoryMatch && searchMatch;
-    })
-    .sort((a, b) => a.name.localeCompare(b.name));
-
+  const filteredItems = menuapi.filter(
+    (item) =>
+      (selectedCategory === item.categrory) && 
+      item.name.toLowerCase().includes(searchTerm.toLowerCase())
+  )
+  .sort((a, b) => a.name.localeCompare(b.name))
   if (selectedItem) {
-    return (
-      <MenuDetails item={selectedItem} goBack={() => setSelectedItem(null)} />
-    );
+    return <MenuDetails item={selectedItem} goBack={() => setSelectedItem(null)} />;
   }
 
   return (
     <div className="menu-container">
-      {/* 🔹 Header */}
+
       <div className="title-container">
         <img src="/images/logoe.png" alt="Logo" className="logo" />
         <h1 className="title">Sunset Coffee</h1>
       </div>
-
-      {/* 🔹 Search Bar */}
       <input
         type="text"
         placeholder="Search for menu item"
@@ -62,57 +48,24 @@ const Menu = () => {
         className="search-bar"
       />
 
-      {/* 🔹 Category Menu */}
       <div className="category-menu">
         {categories.map((cat, index) => (
-          <div key={index}>
-            <button
-              onClick={() => {
-                setSelectedCategory(cat.categ);
-                if (cat.subcategories) {
-                  // Automatically select first subcategory when category has subcategories
-                  setSelectedSubCategory(cat.subcategories[0].name);
-                } else {
-                  setSelectedSubCategory(null);
-                }
-              }}
-              className={`category-btn ${
-                selectedCategory === cat.categ ? "active" : ""
-              }`}
-            >
-              {cat.categ}
-            </button>
-
-            {/* 🔸 Subcategories (inside SUNSET & TOXIUAE) */}
-            {cat.subcategories && selectedCategory === cat.categ && (
-              <div className="subcategory-menu">
-                {cat.subcategories.map((sub, subIndex) => (
-                  <button
-                    key={subIndex}
-                    onClick={() => setSelectedSubCategory(sub.name)}
-                    className={`subcategory-btn ${
-                      selectedSubCategory === sub.name ? "active" : ""
-                    }`}
-                  >
-                    {sub.name}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
+          <button
+            key={index}
+            onClick={() => setSelectedCategory(cat.categ)}
+            className={`category-btn ${selectedCategory === cat.categ ? "active" : ""}`}
+          >
+            {cat.categ}
+          </button>
         ))}
       </div>
 
-      {/* 🔹 Filtered Menu Items */}
+      {/* Filtered Items */}
       <div className="menu-grid">
         {filteredItems.length > 0 ? (
           filteredItems.map((item, id) => (
-            <div
-              key={id}
-              className="menu-item"
-              onClick={() => setSelectedItem(item)}
-            >
-              <img src={item.img} alt={item.name} />
+            <div key={id} className="menu-item">
+              <img src={item.img} alt={item.name} className="menu-img" /> {/* 🖼️ Show Image */}
               <p className="menu-name">{item.name}</p>
               <p className="menu-price">{item.price}</p>
             </div>

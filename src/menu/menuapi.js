@@ -619,7 +619,7 @@ const menuapi = [
         categrory: "COLD COFFEE",
         img: "/images/frap.jpg",
           },
-     {
+    {
             name: "San Sebastián cheesecake",
             price: 152,
             categrory: "CAKE",
@@ -661,6 +661,30 @@ const menuapi = [
 //     categrory: "CAKE",
 //     img: "/images/tiramisu.jpg",
 // },  
+{
+    name: "CHOCOLATE KUNAFA",
+    price: 182,
+    categrory: "CAKE",
+    img: "/images/chocokunafa.jpg",
+},   {
+    name: "DATE PUDDING",
+    price: 162,
+    categrory: "CAKE",
+    img: "/images/datepudd.jpg",
+},   {
+    name: "FRENCH TOAST",
+    price: 162,
+    categrory: "CAKE",
+    img: "/images/frenchtoast1.jpeg",
+},  
+{
+    name: "PUDDING",
+    price: 152,
+    img: "/images/normalP.jpg",
+    categrory: "CAKE",
+}, 
+
+ 
 
 ]
 

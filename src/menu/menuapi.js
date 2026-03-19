@@ -530,7 +530,7 @@ const menuapi = [
 },
 {
     name: "S’mores cookies",
-    price: 39,
+    price: 19,
     categrory: "DESERT",
     img: "",
     desc: "A delightful fusion of creamy tiramisu and rich leche, with layers of indulgent flavors and a smooth, velvety texture!"

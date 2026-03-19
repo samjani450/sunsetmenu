@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import menuapi from "./menuapi";
-import MenuDetails from "./MenuDetails"; // Import Menu Details
+import MenuDetails from "./MenuDetails";
 import "./style.css";
 
 const categories = [
@@ -15,7 +15,6 @@ const categories = [
   { categ: "JUICE & WATER" },
   { categ: "CAKE" },
   { categ: "AFTERNOON TEA" },
- 
 ];
 
 const Menu = () => {
@@ -23,23 +22,30 @@ const Menu = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedItem, setSelectedItem] = useState(null);
 
-  const filteredItems = menuapi.filter(
-    (item) =>
-      (selectedCategory === item.categrory) && 
-      item.name.toLowerCase().includes(searchTerm.toLowerCase())
-  )
-  .sort((a, b) => a.name.localeCompare(b.name))
+  const filteredItems = menuapi
+    .filter(
+      (item) =>
+        selectedCategory === item.categrory &&
+        item.name.toLowerCase().includes(searchTerm.toLowerCase())
+    )
+    .sort((a, b) => a.name.localeCompare(b.name));
+
   if (selectedItem) {
-    return <MenuDetails item={selectedItem} goBack={() => setSelectedItem(null)} />;
+    return (
+      <MenuDetails
+        item={selectedItem}
+        goBack={() => setSelectedItem(null)}
+      />
+    );
   }
 
   return (
     <div className="menu-container">
-
       <div className="title-container">
         <img src="/images/logoe.png" alt="Logo" className="logo" />
         <h1 className="title">Sunset Coffee</h1>
       </div>
+
       <input
         type="text"
         placeholder="Search for menu item"
@@ -53,7 +59,9 @@ const Menu = () => {
           <button
             key={index}
             onClick={() => setSelectedCategory(cat.categ)}
-            className={`category-btn ${selectedCategory === cat.categ ? "active" : ""}`}
+            className={`category-btn ${
+              selectedCategory === cat.categ ? "active" : ""
+            }`}
           >
             {cat.categ}
           </button>
@@ -63,13 +71,33 @@ const Menu = () => {
       {/* Filtered Items */}
       <div className="menu-grid">
         {filteredItems.length > 0 ? (
-          filteredItems.map((item, id) => (
-            <div key={id} className="menu-item">
-              <img src={item.img} alt={item.name} className="menu-img" /> {/* 🖼️ Show Image */}
-              <p className="menu-name">{item.name}</p>
-              <p className="menu-price">{item.price}</p>
-            </div>
-          ))
+          filteredItems.map((item, id) => {
+            const price = parseFloat(item.price); // ensure number
+            const vat = price * 0.05; // 5% VAT
+            const finalPrice = price + vat;
+
+            return (
+              <div
+                key={id}
+                className="menu-item"
+                onClick={() => setSelectedItem(item)} // 👈 click to open details
+              >
+                <img
+                  src={item.img}
+                  alt={item.name}
+                  className="menu-img"
+                />
+                <p className="menu-name">{item.name}</p>
+
+
+              
+
+                <p className="menu-price">
+                 {finalPrice.toFixed(2)}
+                </p>
+              </div>
+            );
+          })
         ) : (
           <p className="no-items">No items found</p>
         )}

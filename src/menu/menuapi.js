@@ -84,18 +84,7 @@ const menuapi = [
         categrory: "COFFEE",
         img: '/images/icedspanish.jpg'
     },
-    // {
-    //     name: "ICED cappuccino",
-    //     price: 23,
-    //     categrory: "COFFEE",
-    //     img: '/images/icedcapu.jpg'
-    // },
-    // {
-    //     name: "iced cafe mocha",
-    //     price: 27,
-    //     categrory: "COFFEE",
-    //     img: '/images/icedcaffeemocha.jpg'
-    // },
+
     {
         name: "ICED CAFE LATTE",
         price: 24.5,
@@ -158,14 +147,7 @@ const menuapi = [
         categrory: "MATCHA",
         img: '/images/mangomatcha.jpg',
     },
-   
-    // {
-    //     name: "Oat Milk Matcha",
-    //     price: 32,
-    //     categrory: "MATACHA",
-    //     img: '/images/matcha.jpg',
-    // },
-      
+
  
     {
         name: "Sunset Matcha",
@@ -285,13 +267,7 @@ const menuapi = [
         img: '/images/hallomi2.jpeg',
         desc: 'A delicious avocado toast topped with creamy mashed avocado, a sprinkle of seasoning, and a hint of lemon for the perfect light and healthy bite!'
     },
-    // , {
-    //     name: "Rocket Sandwich",
-    //     price: 35,
-    //     categrory: "BREAKFAST",
-    //     img: '/images/10.jpg',
-    //     desc: 'A fresh and flavorful rocket sandwich with crisp rocket leaves, creamy spread, and hearty brown bread for a wholesome and delicious bite!'
-    // },
+   
     {
         name: "AVOCADO TOAST",
         price: 36.5,
@@ -408,13 +384,7 @@ const menuapi = [
 
 
     },
-    // {
-    //     name: "PEPPERONI PIZZA SANDWICH",
-    //     price: 33,
-    //     categrory: "SANDWICH",
-    //     img: "/images/17.jpg",
-    //     desc: 'A delicious fusion of pizza and sandwich, loaded with spicy pepperoni, melted cheese, and zesty marinara sauce in crispy toasted bread!'
-    // },
+   
     {
         name: "CHICKEN AVO SANDWICH",
         price: 34.5,
@@ -432,46 +402,7 @@ const menuapi = [
         desc: "A delicious and nutrient-packed Açaí Bowl, topped with fresh fruits, granola, and honey for the perfect energy boost!"
     },
    
-    {
-        name: "BROWNIES",
-        price: 29.5,
-        categrory: "DESERT",
-        img: "/images/19.jpg"
-    }, {
-        name: "COOKIES",
-        price: 19.5,
-        categrory: "DESERT",
-        img: '/images/cookies.jpeg',
-        desc: "Freshly baked, soft, and chewy cookies with a perfect balance of sweetness and crunch in every bite!"
-    },
-    {
-        name: "PUDDING",
-        price: 33.5,
-        categrory: "DESERT",
-        img: "/images/18.jpg",
-        desc: "A rich and creamy pudding, perfectly smooth and sweet for a delightful treat!"
-    },
-    {
-        name: "DATE PUDDING",
-        price: 36.5,
-        categrory: "DESERT",
-        img: "/images/datepudding.jpeg",
-        desc: 'A warm and moist date pudding, rich in flavor with a caramel-like sweetness in every bite!'
-    },
-     {
-        name: "Strawberry puff",
-        price: 25,
-        categrory: "DESERT",
-        img: "/images/straweberrypuff.png",
-        desc: 'A warm and moist date pudding, rich in flavor with a caramel-like sweetness in every bite!'
-    },
-     {
-        name: "Tiramisu ball",
-        price: 35,
-        categrory: "DESERT",
-        img: "/images/tramisubol.png",
-        desc: 'A warm and moist date pudding, rich in flavor with a caramel-like sweetness in every bite!'
-    },
+   
     {
         name: "FRENCH TOAST",
         price: 40.5,
@@ -480,13 +411,7 @@ const menuapi = [
         img: "/images/frenchtoast1.jpeg",
         desc: "Golden, crispy French toast, perfectly sweet and topped with syrup for a delicious breakfast treat!"
     },
-    // {
-    //     name: "MOLTEN LAVA CAKE",
-    //     price: 30,
-    //     categrory: "DESERT",
-    //     img: "/images/moltenlava.jpg",
-    //     desc: "A rich and decadent molten lava cake with a gooey chocolate center that melts in every bite!"
-    // },
+   
     {
         name: "SAN SEBASTIÁN",
         price: 38.5,
@@ -494,117 +419,7 @@ const menuapi = [
         img: "/images/26.jpg",
         desc: "A creamy and rich San Sebastian cheesecake with a perfectly caramelized top and a melt-in-your-mouth texture!"
     },
-    {
-        name: "PANCAKE",
-        price: 38.5,
-        categrory: "DESERT",
-        img: "/images/21.jpg",
-        desc: "Fluffy and light Japanese pancakes, stacked high with a soft, cloud-like texture and a sweet, delicate flavor!"
-    },
-    // {
-    //     name: "SUNSET MANGO CHEESE CAKE",
-    //     price: 37,
-    //     categrory: "DESERT",
-    //     img: "/images/mangocheese.jpg",
-    //     desc: 'A rich and creamy mango cheesecake with a buttery crust, topped with fresh mango for a perfect tropical delight!'
-    // },
-    {
-        name: "SUNSET TOASTED ICECREAM",
-        price: 38.5,
-        categrory: "DESERT",
-        img: "/images/27.jpg",
-        desc: "A unique and delicious toasted ice cream, with a warm, crispy outer layer and a cool, creamy center!"
-
-    },
-
-    {
-        name: "COOKIES TIRAMISU",
-        price: 23.5,
-        categrory: "DESERT",
-        img: "/images/cookiestraismo.jpg",
-        desc: "A classic Tiramisu, with layers of coffee-soaked ladyfingers and creamy mascarpone, dusted with cocoa for the perfect indulgence!A classic Tiramisu, with layers of coffee-soaked ladyfingers and creamy mascarpone, dusted with cocoa for the perfect indulgence!"
-
-    },
-
-    // {
-    //     name: "CHEESE CAKE PISTACHIO",
-    //     price: 39,
-    //     categrory: "DESERT",
-    //     img: "/images/23.jpg",
-    //     desc: "A creamy cheesecake with a delightful pistachio flavor, topped with crushed pistachios for the perfect nutty finish!"
-    // },
-    {
-        name: "CREAM BRULEE",
-        price: 40.5,
-        categrory: "DESERT",
-        img: "/images/creambrule.jpeg",
-        desc: "A creamy cheesecake with a delightful pistachio flavor, topped with crushed pistachios for the perfect nutty finish!"
-    },
-    // {
-    //     name: "FRENCHZU",
-    //     price: 42,
-    //     categrory: "DESERT",
-    //     img: "/images/frenchzu.jpg",
-    //     desc: "A creamy cheesecake with a delightful pistachio flavor, topped with crushed pistachios for the perfect nutty finish!"
-    // },
-    {
-        name: "KUNAFA CHEESE CAKE",
-        price: 36.5,
-        categrory: "DESERT",
-        img: "/images/kcc.jpeg",
-        desc: "A creamy cheesecake with a delightful pistachio flavor, topped with crushed pistachios for the perfect nutty finish!"
-    },
-    {
-        name: "PULL UP",
-        price: 40.5,
-        categrory: "DESERT",
-        img: "/images/pull.jpeg",
-        desc: "A creamy cheesecake with a delightful pistachio flavor, topped with crushed pistachios for the perfect nutty finish!"
-    },
-    // {
-    //     name: "Cocount raspberyy",
-    //     price: 37,
-    //     categrory: "DESERT",
-    //     img: "/images/rasp.jpg",
-    //     desc: "A creamy cheesecake with a delightful pistachio flavor, topped with crushed pistachios for the perfect nutty finish!"
-    // },
-    {
-        name: "CRUNCHY CHOCO CAKE",
-        price: 36.5,
-        categrory: "DESERT",
-        img: "/images/cruncychoco.jpg",
-        desc: "A creamy cheesecake with a delightful pistachio flavor, topped with crushed pistachios for the perfect nutty finish!"
-    },
-     {
-        name: "BANANA PUDDING",
-        price: 33.6,
-        categrory: "DESERT",
-        img: "/images/bananapudding.jpg",
-        desc: "A creamy cheesecake with a delightful pistachio flavor, topped with crushed pistachios for the perfect nutty finish!"
-    },
-    // {
-    //     name: "Coco Mango",
-    //     price: 39.5,
-    //     categrory: "DESERT",
-    //     img: "/images/mangonew.jpeg",
-    //     desc: "A creamy cheesecake with a delightful pistachio flavor, topped with crushed pistachios for the perfect nutty finish!"
-    // },
-
-    
-    // {
-    //     name: "LUQAIMAT",
-    //     price: 25,
-    //     categrory: "DESERT",
-    //     img: "/images/des1.jpg",
-    //     desc: "A creamy cheesecake with a delightful pistachio flavor, topped with crushed pistachios for the perfect nutty finish!"
-    // },
-    {
-        name: "LECHES TIRAMISU",
-        price: 33.5,
-        categrory: "DESERT",
-        img: "/images/24.jpg",
-        desc: "A delightful fusion of creamy tiramisu and rich leche, with layers of indulgent flavors and a smooth, velvety texture!"
-    },
+   
     {
         name: "AFTERNOON Tea",
         price: 82,
@@ -642,25 +457,7 @@ const menuapi = [
     price: 162,
     categrory: "CAKE",
     img: "/images/cake1.jpg",
-},  
-// {
-//     name: "Mango Cheese cake",
-//     price: 160,
-//     categrory: "CAKE",
-//     img: "/images/mangocheesecake.jpeg",
-// }, 
-// {
-//     name: "Kunafa Cheese cake",
-//     price: 160,
-//     categrory: "CAKE",
-//     img: "/images/mangocheesecake.jpeg",
-// }, 
-//  {
-//     name: "Tiramisu cake",
-//     price: 160,
-//     categrory: "CAKE",
-//     img: "/images/tiramisu.jpg",
-// },  
+},   
 {
     name: "CHOCOLATE KUNAFA",
     price: 182,
@@ -683,6 +480,69 @@ const menuapi = [
     img: "/images/normalP.jpg",
     categrory: "CAKE",
 }, 
+
+
+ 
+{
+    name: "Creamy Crunchy",
+    price: 35,
+    categrory: "DESERT",
+    img: "/images/creamycrunchy.jpg",
+    desc: "A delightful fusion of creamy tiramisu and rich leche, with layers of indulgent flavors and a smooth, velvety texture!"
+},
+
+
+{
+    name: "Choco coffee cake",
+    price: 38,
+    categrory: "DESERT",
+    img: "/images/chococoffee.jpg",
+    desc: "A delightful fusion of creamy tiramisu and rich leche, with layers of indulgent flavors and a smooth, velvety texture!"
+},
+
+{
+    name: "Pecan dates",
+    price: 38,
+    categrory: "DESERT",
+    img: "/images/pecandates.png",
+    desc: "A delightful fusion of creamy tiramisu and rich leche, with layers of indulgent flavors and a smooth, velvety texture!"
+},
+{
+    name: "Custard pudding ",
+    price: 35,
+    categrory: "DESERT",
+    img: "/images/custardpudding.png",
+    desc: "A delightful fusion of creamy tiramisu and rich leche, with layers of indulgent flavors and a smooth, velvety texture!"
+},
+{
+    name: "Cinnamon roll ",
+    price: 35,
+    categrory: "DESERT",
+    img: "/images/cinamon.jpg",
+    desc: "A delightful fusion of creamy tiramisu and rich leche, with layers of indulgent flavors and a smooth, velvety texture!"
+},
+{
+    name: "Biscoff truffles",
+    price: 35,
+    categrory: "DESERT",
+    img: "/images/biscofftruffles.jpg",
+    desc: "A delightful fusion of creamy tiramisu and rich leche, with layers of indulgent flavors and a smooth, velvety texture!"
+},
+{
+    name: "S’mores cookies",
+    price: 39,
+    categrory: "DESERT",
+    img: "",
+    desc: "A delightful fusion of creamy tiramisu and rich leche, with layers of indulgent flavors and a smooth, velvety texture!"
+},
+
+{
+    name: "Red velvet cookies ",
+    price: 19,
+    categrory: "DESERT",
+    img: "",
+    desc: "A delightful fusion of creamy tiramisu and rich leche, with layers of indulgent flavors and a smooth, velvety texture!"
+},
 
  
 

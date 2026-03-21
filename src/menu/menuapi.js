@@ -253,13 +253,7 @@ const menuapi = [
         categrory: "JUICE & WATER",
         img: '/images/sparkling.jpeg'
     },
-    {
-        name: "CLASSIC SMASHED AVOCADO",
-        price: 36.5,
-        categrory: "BREAKFAST",
-        img: '/images/6.jpg',
-        desc: 'A delicious avocado toast topped with creamy mashed avocado, a sprinkle of seasoning, and a hint of lemon for the perfect light and healthy bite!'
-    },
+
     {
         name: "Classic halloumi cheese",
         price: 31.5,
@@ -268,6 +262,38 @@ const menuapi = [
         desc: 'A delicious avocado toast topped with creamy mashed avocado, a sprinkle of seasoning, and a hint of lemon for the perfect light and healthy bite!'
     },
    
+     {
+        name: "PEPERONI BAGEl",
+        price: 31.5,
+        categrory: "BREAKFAST",
+        img: '/images/pepperonibuggle.jpg',
+        desc: 'A delicious avocado toast topped with creamy mashed avocado, a sprinkle of seasoning, and a hint of lemon for the perfect light and healthy bite!'
+    },
+
+      {
+        name: "halloumi pesto bagel",
+        price: 31.5,
+        categrory: "BREAKFAST",
+        img: '/images/hallomipestobuggle.png',
+        desc: 'A delicious avocado toast topped with creamy mashed avocado, a sprinkle of seasoning, and a hint of lemon for the perfect light and healthy bite!'
+    },
+
+    
+      {
+        name: "turkey egg scrumbled",
+        price: 31.5,
+        categrory: "BREAKFAST",
+        img: '/images/turkeyeggscrumbled.jpg',
+        desc: 'A delicious avocado toast topped with creamy mashed avocado, a sprinkle of seasoning, and a hint of lemon for the perfect light and healthy bite!'
+    },
+    {
+        name: "cheese bagel",
+        price: 31.5,
+        categrory: "BREAKFAST",
+        img: '/images/cheesebagle.jpg',
+        desc: 'A delicious avocado toast topped with creamy mashed avocado, a sprinkle of seasoning, and a hint of lemon for the perfect light and healthy bite!'
+    },
+
     {
         name: "AVOCADO TOAST",
         price: 36.5,
@@ -275,14 +301,7 @@ const menuapi = [
         img: '/images/0.jpg',
         desc: 'A fresh and flavorful rocket sandwich with crisp rocket leaves, creamy spread, and hearty brown bread for a wholesome and delicious bite!'
     },
-    {
-        name: "Turkish Egg ",
-        price: 36.5,
-        categrory: "BREAKFAST",
-        img: '/images/8.jpg',
-        desc: 'A traditional Turkish egg dish with poached eggs, rich yogurt, and a flavorful garlic butter sauce, topped with spices for a savory delight!'
-
-    },
+  
     {
         name: "CHEESE SANDWICH",
         price: 26.5,
@@ -305,13 +324,7 @@ const menuapi = [
         img: '/images/14.jpg',
         desc: 'A light, flaky, and buttery croissant with a golden, crispy exterior and a soft, airy inside!'
     },
-    {
-        name: "EGG BUN SANDWICH",
-        price: 31.5,
-        categrory: "BREAKFAST",
-        img: '/images/eggbun1.jpg',
-        desc: 'A delicious egg bun sandwich with a soft, fluffy bun filled with a perfectly cooked egg, fresh veggies, and a savory sauce for a satisfying bite!'
-    },
+  
     {
         name: "CROISSANT Boiled Egg & Avocado",
         price: 34.5,
@@ -326,39 +339,10 @@ const menuapi = [
         img: '/images/corrisnteggcheese.jpg',
         desc: "A buttery, flaky croissant filled with fluffy scrambled eggs and melted cheese, creating a deliciously rich and satisfying breakfast treat!"
     },
-    {
-        name: "EGG BENEDICT",
-        price: 36.5,
-        categrory: "BREAKFAST",
-        img:'/images/eggbun2.jpg'
-    },
-    {
-        name: "FALAFEL TOAST",
-        price: 32,
-        categrory: "BREAKFAST",
-        img: "/images/4.jpg",
-        desc: "A tasty falafel toast with crispy falafel patties, fresh veggies, and a drizzle of tahini sauce, all nestled between toasted bread for a flavorful bite!"
-    },
-    {
-        name: "HALLOUMI SANDWICH",
-        price: 31.5,
-        categrory: "BREAKFAST",
-        img: "/images/hallomi.PNG",
-        desc: "A tasty falafel toast with crispy falafel patties, fresh veggies, and a drizzle of tahini sauce, all nestled between toasted bread for a flavorful bite!"
-    },
-    {
-        name: "OMELETTE",
-        price: 36.5,
-        categrory: "BREAKFAST",
-        img: "/images/11.jpg",
-        desc: "A fluffy and savory omelette, packed with fresh veggies, melted cheese, and perfectly seasoned for a delightful breakfast treat!"
-    },
-    {
-        name: "TRUFFLE EGG Sando",
-        price: 36.5,
-        categrory: "BREAKFAST", img: "/images/9.jpg",
-        desc: "A luxurious truffle egg toast with creamy scrambled eggs infused with truffle oil, served on a crispy toasted bread for a rich and indulgent flavor!"
-    },
+   
+   
+ 
+  
     {
         name: "TRUFFLE EGG Toast",
         price: 36.5,
@@ -367,23 +351,9 @@ const menuapi = [
         desc: "A luxurious truffle egg toast with creamy scrambled eggs infused with truffle oil, served on a crispy toasted bread for a rich and indulgent flavor!"
     },
     
-    {
-        name: "TUNA SANDWICH",
-        price: 33.5,
-        categrory: "SANDWICH",
-        img: "/images/15.jpg",
-        desc: 'A classic tuna sandwich with creamy tuna filling, crisp lettuce, and fresh bread for a perfect savory bite!'
-    },
    
-    {
-        name: "PEPPERONI SANDWICH",
-        price: 34.5,
-        categrory: "SANDWICH",
-        img: "/images/17.jpg",
-        desc: 'A flavorful pepperoni sandwich with melted cheese, zesty sauce, and crispy bread for a perfect savory delight!'
-
-
-    },
+   
+  
    
     {
         name: "CHICKEN AVO SANDWICH",
@@ -532,7 +502,7 @@ const menuapi = [
     name: "S’mores cookies",
     price: 19,
     categrory: "DESERT",
-    img: "",
+    img: "/images/cheesebagle.jpg",
     desc: "A delightful fusion of creamy tiramisu and rich leche, with layers of indulgent flavors and a smooth, velvety texture!"
 },
 
@@ -540,7 +510,14 @@ const menuapi = [
     name: "Red velvet cookies ",
     price: 19,
     categrory: "DESERT",
-    img: "",
+    img: "/images/redvelvet.jpeg",
+    desc: "A delightful fusion of creamy tiramisu and rich leche, with layers of indulgent flavors and a smooth, velvety texture!"
+},
+{
+    name: "MANGO CHEESE CAKE",
+    price: 36,
+    categrory: "DESERT",
+    img: "/images/mangocheesenw.jpg",
     desc: "A delightful fusion of creamy tiramisu and rich leche, with layers of indulgent flavors and a smooth, velvety texture!"
 },
 

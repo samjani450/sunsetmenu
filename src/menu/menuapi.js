@@ -78,6 +78,12 @@ const menuapi = [
         categrory: "MATACHA",
         img: '/images/hotmacha.jpg'
     },
+     {
+        name: "HOT MATCHA LATTE",
+        price: 28.5,
+        categrory: "MATACHA",
+        img: '/images/hotmacha.jpg'
+    },
     {
         name: "ICED SPANISH",
         price: 26.5,
@@ -159,7 +165,7 @@ const menuapi = [
         name: "Strawberry Matcha",
         price: 38.5,
         categrory: "MATCHA",
-        img: '/images/strawX.jpg',
+        img: '/images/strawberrymatchanew.jpeg',
     },
   
     {
@@ -477,13 +483,7 @@ const menuapi = [
     img: "/images/pecandates.png",
     desc: "A delightful fusion of creamy tiramisu and rich leche, with layers of indulgent flavors and a smooth, velvety texture!"
 },
-{
-    name: "Custard pudding ",
-    price: 35,
-    categrory: "DESERT",
-    img: "/images/custardpudding.png",
-    desc: "A delightful fusion of creamy tiramisu and rich leche, with layers of indulgent flavors and a smooth, velvety texture!"
-},
+
 {
     name: "Cinnamon roll ",
     price: 35,
@@ -502,7 +502,7 @@ const menuapi = [
     name: "S’mores cookies",
     price: 19,
     categrory: "DESERT",
-    img: "/images/cheesebagle.jpg",
+    img: "/images/cookiesnew.jpeg",
     desc: "A delightful fusion of creamy tiramisu and rich leche, with layers of indulgent flavors and a smooth, velvety texture!"
 },
 

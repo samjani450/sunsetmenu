@@ -138,7 +138,6 @@ const menuapi = [
         name: "AFFOGATO MATCHA",
         price: 31.5,
         categrory: "MATCHA",
-
         img: '/images/affogato.jpg',
     },
     {
@@ -300,6 +299,26 @@ const menuapi = [
         desc: 'A delicious avocado toast topped with creamy mashed avocado, a sprinkle of seasoning, and a hint of lemon for the perfect light and healthy bite!'
     },
 
+      {
+        name: "Crème Brûlée pull up",
+        price: 42.5,
+        categrory: "DESERT",
+       
+        img: '/images/omelttenew.jpeg',
+    },
+    {
+        name: "Shakshouka",
+        price: 38.5,
+        categrory: "BREAKFAST",
+        img: '/images/shakshouka.jpeg',
+    },
+ {
+        name: "Omelette",
+        price: 35,
+        categrory: "BREAKFAST",
+         img: '/images/creambrulenew.jpeg',
+    },
+
     {
         name: "AVOCADO TOAST",
         price: 36.5,
@@ -345,10 +364,6 @@ const menuapi = [
         img: '/images/corrisnteggcheese.jpg',
         desc: "A buttery, flaky croissant filled with fluffy scrambled eggs and melted cheese, creating a deliciously rich and satisfying breakfast treat!"
     },
-   
-   
- 
-  
     {
         name: "TRUFFLE EGG Toast",
         price: 36.5,
@@ -356,11 +371,7 @@ const menuapi = [
          img: "/images/5.jpg",
         desc: "A luxurious truffle egg toast with creamy scrambled eggs infused with truffle oil, served on a crispy toasted bread for a rich and indulgent flavor!"
     },
-    
-   
-   
-  
-   
+ 
     {
         name: "CHICKEN AVO SANDWICH",
         price: 34.5,

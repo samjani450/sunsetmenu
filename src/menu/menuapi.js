@@ -405,6 +405,25 @@ name_ar:"كرواسون مع بيض مخفوق وجبن"
    },
  
     {
+        name: "TUNA SANDWICH",
+        price: 33.5,
+        categrory: "SANDWICH",
+        img: "/images/15.jpg",
+        desc: 'A classic tuna sandwich with creamy tuna filling, crisp lettuce, and fresh bread for a perfect savory bite!'
+    },
+   
+    {
+        name: "PEPPERONI SANDWICH",
+        price: 34.5,
+        categrory: "SANDWICH",
+        img: "/images/17.jpg",
+        desc: 'A flavorful pepperoni sandwich with melted cheese, zesty sauce, and crispy bread for a perfect savory delight!'
+
+
+    },
+  
+   
+      {
         name: "CHICKEN AVO SANDWICH",
         price: 34.5,
         categrory: "SANDWICH",
@@ -474,7 +493,7 @@ name_ar:"كرواسون مع بيض مخفوق وجبن"
     name_ar:"كعكة التيراميسو"
 },
 {
-    name: "كعكة رافائيلو",
+    name: "Raffaello cake",
     price: 162,
     categrory: "CAKE",
     img: "/images/cake1.jpg",

@@ -206,7 +206,7 @@
 
 .menu-name {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
   color: #83171e;
   margin-bottom: 8px;
   text-transform: uppercase;
@@ -215,7 +215,7 @@
 
 .menu-price {
   font-size: 22px;
-  font-weight: 800;
+  font-weight: 500;
   color: #83171e;
   background: linear-gradient(135deg, #83171e, #a1352b);
   -webkit-background-clip: text;
@@ -227,7 +227,7 @@
 .no-items {
   font-size: 20px;
   color: #83171e;
-  font-weight: 600;
+  font-weight: 400;
   padding: 60px 20px;
   text-align: center;
 }

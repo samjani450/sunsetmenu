@@ -80,7 +80,7 @@ const Menu = () => {
               <div
                 key={id}
                 className="menu-item"
-                onClick={() => setSelectedItem(item)} // 👈 click to open details
+                 // 👈 click to open details
               >
                 <img
                   src={item.img}

@@ -129,7 +129,7 @@ const Menu = () => {
               <div
                 key={id}
                 className="menu-item"
-                onClick={() => setSelectedItem(item)}
+                
               >
                 <img src={item.img} alt={item.name} />
                 

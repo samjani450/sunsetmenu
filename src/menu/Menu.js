@@ -1,26 +1,47 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import menuapi from "./menuapi";
 import MenuDetails from "./MenuDetails";
 import "./style.css";
 
 const categories = [
-  { categ: "BREAKFAST" },
-  { categ: "CROISSANT" },
-  { categ: "SANDWICH" },
-  { categ: "DESERT" },
-  { categ: "COFFEE" },
-  { categ: "FILTERED COFFEE"},
-  { categ: "MATCHA" },
-  { categ: "COLD DRINKS" },
-  { categ: "JUICE & WATER" },
-  { categ: "CAKE" },
-  { categ: "AFTERNOON TEA" },
+  { en: "BREAKFAST", ar: "فطور" },
+  { en: "CROISSANT", ar: "كرواسون" },
+  { en: "SANDWICH", ar: "ساندويتش" },
+  { en: "DESERT", ar: "حلويات" },
+  { en: "COFFEE", ar: "قهوة" },
+  { en: "FILTERED COFFEE", ar: "قهوة مفلترة" },
+  { en: "MATCHA", ar: "ماتشا" },
+  { en: "COLD DRINKS", ar: "مشروبات باردة" },
+  { en: "JUICE & WATER", ar: "عصائر ومياه" },
+  { en: "CAKE", ar: "كيك" },
+  { en: "AFTERNOON TEA", ar: "شاي العصر" },
 ];
 
 const Menu = () => {
   const [selectedCategory, setSelectedCategory] = useState("BREAKFAST");
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedItem, setSelectedItem] = useState(null);
+
+  // 🌙 Theme - DEFAULT LIGHT
+  const [theme, setTheme] = useState("light");
+
+  // 🌍 Language - DEFAULT ENGLISH
+  const [lang, setLang] = useState("en");
+
+  // ✅ Load saved preferences OR use defaults
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme") || "light";  // 👈 Default light
+    const savedLang = localStorage.getItem("lang") || "en";       // 👈 Default English
+
+    setTheme(savedTheme);
+    setLang(savedLang);
+  }, []);
+
+  // ✅ Save to localStorage
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+    localStorage.setItem("lang", lang);
+  }, [theme, lang]);
 
   const filteredItems = menuapi
     .filter(
@@ -40,66 +61,97 @@ const Menu = () => {
   }
 
   return (
-    <div className="menu-container">
+    <div
+      className={`menu-container ${theme}`}
+      dir={lang === "ar" ? "rtl" : "ltr"}
+    >
+      {/* 🔹 Header */}
       <div className="title-container">
         <img src="/images/logoe.png" alt="Logo" className="logo" />
-        <h1 className="title">Sunset Coffee</h1>
+        <h1 className="title">
+          {lang === "en" ? "Sunset Coffee" : "مقهى الغروب"}
+        </h1>
+
+        {/* 🌙 Theme Button */}
+        <button
+          className="theme-toggle"
+          onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+        >
+          {theme === "light" ? "🌙" : "☀️"}
+        </button>
+
+        {/* 🌍 Language Button */}
+        <button
+          className="lang-toggle"
+          onClick={() => setLang(lang === "en" ? "ar" : "en")}
+        >
+          {lang === "en" ? "AR" : "EN"}
+        </button>
       </div>
 
+      {/* 🔍 Search */}
       <input
         type="text"
-        placeholder="Search for menu item"
+        placeholder={
+          lang === "en"
+            ? "Search for menu item"
+            : "ابحث عن عنصر"
+        }
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
         className="search-bar"
       />
 
+      {/* 🔹 Categories */}
       <div className="category-menu">
         {categories.map((cat, index) => (
           <button
             key={index}
-            onClick={() => setSelectedCategory(cat.categ)}
+            onClick={() => setSelectedCategory(cat.en)}
             className={`category-btn ${
-              selectedCategory === cat.categ ? "active" : ""
+              selectedCategory === cat.en ? "active" : ""
             }`}
           >
-            {cat.categ}
+            {lang === "en" ? cat.en : cat.ar}
           </button>
         ))}
       </div>
 
-      {/* Filtered Items */}
+      {/* 🔹 Items */}
       <div className="menu-grid">
         {filteredItems.length > 0 ? (
           filteredItems.map((item, id) => {
-            const price = parseFloat(item.price); // ensure number
-            const vat = price * 0.05; // 5% VAT
+            const price = parseFloat(item.price);
+            const vat = price * 0.05;
             const finalPrice = price + vat;
 
             return (
               <div
                 key={id}
                 className="menu-item"
-                 // 👈 click to open details
+                onClick={() => setSelectedItem(item)}
               >
-                <img
-                  src={item.img}
-                  alt={item.name}
-                  className="menu-img"
-                />
-                <p className="menu-name">{item.name}</p>
-
-
-              
-
-                <p className="menu-price">
-                 {finalPrice.toFixed(2)}
-                </p>
+                <img src={item.img} alt={item.name} />
+                
+                <div className="menu-item-content"> {/* 👈 Added wrapper */}
+                  <p className="menu-name">
+                    {lang === "en"
+                      ? item.name
+                      : item.name_ar || item.name}
+                  </p>
+                  <p className="menu-price">
+                    {finalPrice.toFixed(2)}
+                  </p>
+                </div>
               </div>
             );
           })
         ) : (
-          <p className="no-items">No items found</p>
+          <p className="no-items">
+            {lang === "en"
+              ? "No items found"
+              : "لا توجد عناصر"}
+          </p>
         )}
       </div>
     </div>

@@ -80,12 +80,12 @@ const Menu = () => {
           {theme === "light" ? "🌙" : "☀️"}
         </button>
 
-        {/* 🌍 Language Button */}
+        {/* 🌍 Language Button - ARB */}
         <button
           className="lang-toggle"
           onClick={() => setLang(lang === "en" ? "ar" : "en")}
         >
-          {lang === "en" ? "AR" : "EN"}
+          {lang === "en" ? "ARB" : "EN"}  {/* ✅ ARB Added */}
         </button>
       </div>
 
@@ -129,11 +129,11 @@ const Menu = () => {
               <div
                 key={id}
                 className="menu-item"
-                
+              
               >
                 <img src={item.img} alt={item.name} />
                 
-                <div className="menu-item-content"> {/* 👈 Added wrapper */}
+                <div className="menu-item-content">
                   <p className="menu-name">
                     {lang === "en"
                       ? item.name

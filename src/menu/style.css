@@ -8,7 +8,7 @@
 /* 🔹 Container */
 .menu-container {
   min-height: 80vh;
-  padding: 20px;
+  padding: 0px 20px;
   transition: all 0.3s ease;
 }
 

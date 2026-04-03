@@ -409,7 +409,8 @@ name_ar:"كرواسون مع بيض مخفوق وجبن"
         price: 33.5,
         categrory: "SANDWICH",
         img: "/images/15.jpg",
-        desc: 'A classic tuna sandwich with creamy tuna filling, crisp lettuce, and fresh bread for a perfect savory bite!'
+        desc: 'A classic tuna sandwich with creamy tuna filling, crisp lettuce, and fresh bread for a perfect savory bite!',
+        name_ar:"ساندوتش تونة"
     },
    
     {
@@ -417,9 +418,8 @@ name_ar:"كرواسون مع بيض مخفوق وجبن"
         price: 34.5,
         categrory: "SANDWICH",
         img: "/images/17.jpg",
-        desc: 'A flavorful pepperoni sandwich with melted cheese, zesty sauce, and crispy bread for a perfect savory delight!'
-
-
+        desc: 'A flavorful pepperoni sandwich with melted cheese, zesty sauce, and crispy bread for a perfect savory delight!',
+name_ar:"ساندوتش بيبروني"
     },
   
    

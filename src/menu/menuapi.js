@@ -183,7 +183,7 @@ const menuapi = [
         name: "Strawberry Matcha",
         price: 38.5,
         categrory: "MATCHA",
-        img: '/images/strawberrymatchanew.jpeg',
+        img: '/images/newstrawberrymatcha.jpeg',
         name_ar:"ماتشا الفراولة"
     },
   

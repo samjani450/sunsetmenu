@@ -63,6 +63,13 @@ const menuapi = [
         img: '/images/spanish1.jpg',
         name_ar:"قهوة لاتيه"
     },
+     {
+        name: "Caramel Macchiato",
+        price: 27,
+        categrory: "COFFEE",
+        img: '/images/caramelm.jpeg',
+        name_ar:"كراميل ماكياتو"
+    },
     {
         name: "FLAT WHITE",
         price: 24.5,
@@ -247,6 +254,7 @@ name_ar:"برتقال أمريكي"
         img: '/images/v60.jpeg',
         name_ar:"V 60"
     },
+    
     {
         name: "COLD BREW",
         price: 34.5,
@@ -254,6 +262,7 @@ name_ar:"برتقال أمريكي"
         img: '/images/coldbrew.jpg',
         name_ar:"القهوة الباردة"
     },
+   
     {
         name: "AERO PRESS",
         price: 34.5,

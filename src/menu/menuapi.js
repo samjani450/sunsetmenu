@@ -67,7 +67,7 @@ const menuapi = [
         name: "Caramel Macchiato",
         price: 27,
         categrory: "COFFEE",
-        img: '/images/caramelm.jpeg',
+        img: '/images/caramelm2.jpg',
         name_ar:"كراميل ماكياتو"
     },
     {

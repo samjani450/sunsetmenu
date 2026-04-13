@@ -136,13 +136,7 @@ const menuapi = [
         img: '/images/icedpassion.jpg',
         name_ar:"شغف مثلج"
     },
-    // {
-    //     name: "MATCHA LATTE",
-    //     price: 33.5,
-    //     categrory: "MATCHA",
-    //     img: '/images/creamymatcha.jpg',
-    //     name_ar:"ماتشا لاتيه"
-    // },
+    
     {
         name: "CREAMY MATCHA Small ",
         price: 21.5,

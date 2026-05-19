@@ -65,9 +65,15 @@ const menuapi = [
     },
      {
         name: "Caramel Macchiato",
-        price: 27,
+        price: 30,
         categrory: "COFFEE",
         img: '/images/caramelm2.jpg',
+        name_ar:"كراميل ماكياتو"
+    }, {
+        name: "Dirty espresso",
+        price: 28,
+        categrory: "COFFEE",
+        img: '/images/dirty esp.jpg',
         name_ar:"كراميل ماكياتو"
     },
     {
